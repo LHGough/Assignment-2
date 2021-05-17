@@ -1,5 +1,0 @@
-P:\2021 KIT206\Assessment2\Assessment2\obj\Debug\Assessment2.csprojAssemblyReference.cache
-P:\2021 KIT206\Assessment2\Assessment2\obj\Debug\MainWindow.g.cs
-P:\2021 KIT206\Assessment2\Assessment2\obj\Debug\App.g.cs
-P:\2021 KIT206\Assessment2\Assessment2\obj\Debug\Assessment2_MarkupCompile.cache
-P:\2021 KIT206\Assessment2\Assessment2\obj\Debug\Assessment2_MarkupCompile.lref

@@ -39,8 +39,8 @@ namespace KIT206_Week9
             get
             {
                 var skillDates = from Publication s in Skills
-                                 orderby s.Certified descending
-                                 select s.Certified;
+                                 orderby s.availabilityDate descending
+                                 select s.availabilityDate;
                 return skillDates.First();
             }
         }

@@ -16,7 +16,7 @@ namespace KIT206_Week9
     {
         public string Title { get; set; }
         public int publicationYear { get; set; }
-		public Type Type { get; set; }
+	public Type Type { get; set; }
         public DateTime availabilityDate { get; set; } //previously Certified
         public string citeAs { get; set; }
         public int age { get; set; }

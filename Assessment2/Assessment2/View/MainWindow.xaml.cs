@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using KIT206_Week9;
 
-namespace KIT206_Week10_Sample
+namespace Assessment2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

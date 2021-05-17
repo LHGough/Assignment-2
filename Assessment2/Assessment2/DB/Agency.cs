@@ -107,7 +107,7 @@ namespace KIT206_Week9
 
                 while (rdr.Read())
                 {
-                    work.Add(new TrainingSession
+                    work.Add(new Publication
                     {
                         Title = rdr.GetString(0),
                         Year = rdr.GetInt32(1),

@@ -20,13 +20,13 @@ namespace KIT206_Week9
 
         public Boss()
         {
-            staff = Agency.LoadAll();
+            staff = researcherDatabase.LoadAll();
             viewableStaff = new ObservableCollection<Researcher>(staff); //this list we will modify later
 
             //Part of step 2.3.2 from Week 8 tutorial
             foreach (Researcher e in staff)
             {
-                e.Skills = Agency.LoadPublications(e.ID);
+                e.Skills = researcherDatabase.LoadPublications(e.ID);
             }
         }
 

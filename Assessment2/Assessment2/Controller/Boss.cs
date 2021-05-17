@@ -21,6 +21,7 @@ namespace KIT206_Week9
         public Boss()
         {
             staff = Agency.LoadAll();
+            
             viewableStaff = new ObservableCollection<Researcher>(staff); //this list we will modify later
 
             //Part of step 2.3.2 from Week 8 tutorial

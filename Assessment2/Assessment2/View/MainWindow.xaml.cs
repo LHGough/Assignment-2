@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,7 +25,7 @@ namespace KIT206_Week10_Sample
         //then consider putting this code (and that for 3.4 below) into the App class, with a public
         //property to access the shared resource.
         private const string STAFF_LIST_KEY = "staffList";
-        private Boss boss;
+        private Faculty faculty;
 
         public MainWindow()
         {
@@ -37,9 +37,9 @@ namespace KIT206_Week10_Sample
             //sampleListBox.Items.Add("three");
 
             //Part of task 3.4 (yes, horribly long, but most of this won't change between different resources)
-            // See App.xaml for an alternative way of declaring the Boss resource in two stages that would allow
-            // this code to be simplified (as we could refer to the Boss object directly).
-            boss = (Boss)(Application.Current.FindResource(STAFF_LIST_KEY) as ObjectDataProvider).ObjectInstance;
+            // See App.xaml for an alternative way of declaring the Faculty resource in two stages that would allow
+            // this code to be simplified (as we could refer to the Faculty object directly).
+            faculty = (Faculty)(Application.Current.FindResource(STAFF_LIST_KEY) as ObjectDataProvider).ObjectInstance;
         }
 
         private void sampleListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -73,10 +73,10 @@ namespace KIT206_Week10_Sample
             DetailsPanel.DataContext = new { Name = "Fred", SkillCount = 5 };
 
 
-            if (boss.VisibleWorkers.Count > 0)
+            if (faculty.VisibleWorkers.Count > 0)
             {
-                Employee theRemoved = boss.VisibleWorkers[0]; //this is just to keep the GUI tidy (after Task 4 implemented)
-                boss.VisibleWorkers.RemoveAt(0); //the actual removal step
+                Researcher theRemoved = faculty.VisibleWorkers[0]; //this is just to keep the GUI tidy (after Task 4 implemented)
+                faculty.VisibleWorkers.RemoveAt(0); //the actual removal step
                 //completing keeping the GUI tidy (something similar may be required in the assignment)
                 if (DetailsPanel.DataContext == theRemoved)
                 {

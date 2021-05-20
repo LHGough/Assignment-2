@@ -15,11 +15,11 @@ namespace KIT206_A2
     public class Publication //change everything to publication
     {
         public string Title { get; set; }
-        public int publicationYear { get; set; }
+        public int PublicationYear { get; set; }
 	public Type Type { get; set; }
-        public DateTime availabilityDate { get; set; } //previously Certified
-        public string citeAs { get; set; }
-        public int age { get; set; }
+        public DateTime AvailabilityDate { get; set; } //previously Certified
+        public string CiteAs { get; set; }
+        public int Age { get; set; }
         public int DOI { get; set; }
 
 

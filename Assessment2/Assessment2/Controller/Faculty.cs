@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KIT206_Week9
+namespace KIT206_A2
 {
     class Boss
     {

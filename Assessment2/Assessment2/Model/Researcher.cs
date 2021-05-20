@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KIT206_Week9
+namespace KIT206_A2
 {
 
     //As an example, this includes an additional 'gender' called Any that could be used in a GUI drop-down list.

@@ -110,11 +110,11 @@ namespace KIT206_A2
                     work.Add(new Publication
                     {
                         Title = rdr.GetString(0),
-                        publicationYear = rdr.GetInt32(1),
+                        PublicationYear = rdr.GetInt32(1),
                         Type = ParseEnum<Type>(rdr.GetString(2)),
-                        availabilityDate = rdr.GetDateTime(3),
-                        citeAs = rdr.GetString(4),                   //need to find what numbers to use here, if these are right or not
-                        age = rdr.GetInt32(5),
+                        AvailabilityDate = rdr.GetDateTime(3),
+                        CiteAs = rdr.GetString(4),                   //need to find what numbers to use here, if these are right or not
+                        Age = rdr.GetInt32(5),
                         DOI = rdr.GetInt32(6)
                     });
                 }

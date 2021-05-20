@@ -110,9 +110,12 @@ namespace KIT206_Week9
                     work.Add(new Publication
                     {
                         Title = rdr.GetString(0),
-                        Year = rdr.GetInt32(1),
-                        Mode = ParseEnum<Mode>(rdr.GetString(2)),
-                        Certified = rdr.GetDateTime(3)
+                        publicationYear = rdr.GetInt32(1),
+                        Type = ParseEnum<Type>(rdr.GetString(2)),
+                        availabilityDate = rdr.GetDateTime(3),
+                        citeAs = rdr.GetString(4),                   //need to find what numbers to use here, if these are right or not
+                        age = rdr.GetInt32(5),
+                        DOI = rdr.GetInt32(6)
                     });
                 }
             }

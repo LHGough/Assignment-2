@@ -10,7 +10,7 @@
         Either approach is acceptable, but this way does make accessing the Boss object from the code-behind easier. -->
         <local:Faculty x:Key="faculty"/>
         <ObjectDataProvider x:Key="staffList"
-                            ObjectInstance="{StaticResource boss}"
+                            ObjectInstance="{StaticResource faculty}"
                             MethodName="GetViewableList">
         </ObjectDataProvider>
 

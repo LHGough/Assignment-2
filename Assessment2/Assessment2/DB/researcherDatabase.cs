@@ -8,7 +8,7 @@ using System.Windows; //for generating a MessageBox upon encountering an error
 using MySql.Data.MySqlClient;
 using MySql.Data.Types;
 
-namespace KIT206_Week9
+namespace KIT206_A2
 {
     abstract class researcherDatabase
     {

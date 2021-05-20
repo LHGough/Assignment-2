@@ -118,7 +118,7 @@ namespace KIT206_Week9
             }
             catch (MySqlException e)
             {
-                ReportError("loading training sessions", e);
+                ReportError("loading publications", e);
             }
             finally
             {

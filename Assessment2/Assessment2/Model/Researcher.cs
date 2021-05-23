@@ -61,6 +61,26 @@ namespace KIT206_A2
 //            }
 //        }
 
+         //May or may not be useful, but adding it here just in case (DELETE IF OBSOLETE)
+        public int RecentPublication()
+        {
+            if (Skills != null)
+            {
+                int endYear = DateTime.Today.Year;
+                int startYear = endYear - 1; //window is up to 2 years in length
+                var allRecent = from Publication skill in Skills
+                                where skill.PublicationYear >= startYear && skill.PublicationYear <= endYear
+                                select skill;
+                return allRecent.Count();
+
+                //which could be rewritten as a single expression:
+                //return (from Publication skill in Skills
+                //        where skill.Year >= startYear && skill.Year <= endYear
+                //        select skill).Count();
+            }
+            return 0;
+        }
+        
         public override string ToString()
         {
             //For the purposes of this week's demonstration this returns only the name

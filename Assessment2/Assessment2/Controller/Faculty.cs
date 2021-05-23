@@ -35,6 +35,32 @@ namespace KIT206_A2
             return VisibleWorkers;
         }
 
+        //The below method was in wk 8 but not wk 10 tutorial, which had the above method - is the one below still needed?
+        /// <summary>
+        /// Displays the list of employees on the console.
+        /// </summary>
+        public void Display()
+        {
+            staff.ForEach(Console.WriteLine);
+        }
+
+        /// <summary>
+        /// Returns the Employee with the given ID, or null if no such employee exists.
+        /// </summary>
+        public Researcher Use(int id)
+        {
+            foreach (Researcher e in staff)
+            {
+                if (e.ID == id)
+                {
+                    return e;
+                }
+            }
+            return null;
+            //FYI, if you have an interest in lambda expressions the above could be achieved with:
+            //return staff.First(e => e.ID == id);
+        }
+        
         //This version of Filter modifies the viewable list instead of returning a new list,
         //but the procedure is almost the same
         public void Filter(Gender gender)

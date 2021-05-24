@@ -83,7 +83,6 @@ namespace KIT206_A2
                     conn.Close();
                 }
             }
-
             return staff;
         }
 
@@ -134,7 +133,6 @@ namespace KIT206_A2
                     conn.Close();
                 }
             }
-
             return work;
         }
 

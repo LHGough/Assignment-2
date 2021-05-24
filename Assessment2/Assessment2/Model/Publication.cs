@@ -16,7 +16,7 @@ namespace KIT206_A2
     {
         public string Title { get; set; }
         public int PublicationYear { get; set; }
-	public Type Type { get; set; }
+	    public Type Type { get; set; }
         public DateTime AvailabilityDate { get; set; } //previously Certified
         public string CiteAs { get; set; }
         public int Age { get; set; }
